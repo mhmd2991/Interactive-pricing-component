@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="content">
+            <div class="content-text">
+                <h1>Simple, traffic-based pricing</h1>
+                <div class="paragraph">
+                    <p>Sign-up for our 30-day trial.</p>
+                    <p>No credit card required.</p>
+                </div>
+
+            </div>
+            <div class="box">
+                <div class="top-box">
+                    <p class="pageviews" id="pageViews"></p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                        <div class="selector" id="selector">
+                            <div class="selectBtn"></div>
+                        </div>
+                        <div class="progressBar" id="progressBar"></div>
+                    </div>
+                    <p class="amount" id="amount"> </p>
+                </div>
+                <div class="middle">
+                    <div class="toggle">
+                        <p>Monthly Billing</p>
+                        <div class="inner-toggle" id="inner-toggle">
+                            <label class="label" for="toggleBtn">
+                                <input type="checkbox" class="checkbox" id="toggleBtn">
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="discount">
+                        <p>Yearly Billing</p>
+                        <p class="percentage">25% <span>discount</span></p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>Unlimited websites</li>
+                        <li>100% data ownership</li>
+                        <li> Email reports</li>
+                    </ul>
+                    <a href="#">Start my trial</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>
